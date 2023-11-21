@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="text-white text-center py-4 bg-[#7755B2] text-3xl font-bold">ID Card generator</h1>
+  </header>
+  <main class="w-[90%] mx-auto flex flex-col">
+    <form id="myForm" class="mt-8 max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold text-center">Input data</h2>
+      <label class="grid grid-cols-2 mt-4 text-lg gap-4 items-center" for="user-name">
+        <span class="text-right">Enter name:</span>
+        <input class="border border-black px-4 py-2" type="text" id="user-name">
+      </label>
+      <label class="grid grid-cols-2 mt-4 text-lg gap-4 items-center" for="collage-name">
+        <span class="text-right">Enter collage name:</span>
+        <input class="border border-black px-4 py-2" type="text" id="collage-name">
+      </label>
+      <label class="grid grid-cols-2 mt-4 text-lg gap-4 items-center" for="location-name">
+        <span class="text-right">Enter location:</span>
+        <input class="border border-black px-4 py-2" type="text" id="location-name">
+      </label>
+      <button type="submit" class=" text-white mt-4 py-4 px-8 text-xl font-bold bg-[#7755B2] rounded-lg block w-52 mx-auto hover:bg-[#8566ba]">Generate Card</button>
+    </form>
+    <section id="output" class="max-w-xl mt-8 w-[90%] mx-auto hidden">
+      <h2 class="text-xl font-bold mb-4 text-center">Generated Card</h2>
+      <div class="bg-[#FDEDB5] min-h-[288px] w-[90%] mx-auto rounded-xl p-4 grid grid-cols-1 sm:grid-cols-[1fr,2fr]">
+        <div class="bg-[#95BEA9] h-full flex justify-center items-center">
+          <svg class="my-8 h-28 w-28" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          
+          
+        </div>
+        <div class="bg-white h-full p-4 flex flex-col justify-center gap-4">
+          <p class="text-2xl font-bold" id="card-name">Name: Alexis Perez</p>
+          <p class="text-xl" id="card-collage">Collage Name: UCLA</p>
+          <p class="text-xl" id="card-location">Location: Colombia</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

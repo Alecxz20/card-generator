@@ -1,0 +1,16 @@
+{
+  "name": "card-generator",
+  "version": "1.0.0",
+  "description": "The goal of this project is to create an ID card generator that takes inputs such as Student Name, College Name, and Location, and generates an ID card when the user clicks the “Generate Card”. This exercise not only reinforces our JavaScript skills but also provides a solid foundation for more advanced front-end development with libraries like React.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
